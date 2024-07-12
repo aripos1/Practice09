@@ -11,23 +11,20 @@ public class FriendApp {
 
 		Scanner sc = new Scanner(System.in);
 		List<Friend> fList = new ArrayList<Friend>();
-		List<String> str = new ArrayList<String>();
-		
+
 		System.out.println("친구를 3명 등록해주세요.");
-		
-		String s01 = sc.nextLine();
-		String s02 = sc.nextLine();
-		String s03 = sc.nextLine();
-		
-		str.add(s01);
-		str.add(s02);
-		str.add(s03);
-		
-		String[] sArr01 = s01.split(" ");		
-		String[] sArr02 = s02.split(" ");
-		String[] sArr03 = s03.split(" ");		
-	
-		
+
+		for (int i = 0; i < 3; i++) {
+			String str = sc.nextLine();
+			String[] sArr = str.split(" ");
+
+			Friend f01 = new Friend(sArr[0], sArr[1], sArr[2]);
+			fList.add(f01);
+		}
+		for (int i = 0; i<fList.size(); i++) {
+			System.out.println(fList.get(i).toString()); 
+		}
+	sc.close();
 	}
 
 }

@@ -12,27 +12,27 @@ public class Friend {
 		this.school = school;
 	}
 
-	public final String getName() {
+	public String getName() {
 		return name;
 	}
 
-	public final void setName(String name) {
+	public  void setName(String name) {
 		this.name = name;
 	}
 
-	public final String getHp() {
+	public  String getHp() {
 		return hp;
 	}
 
-	public final void setHp(String hp) {
+	public  void setHp(String hp) {
 		this.hp = hp;
 	}
 
-	public final String getSchool() {
+	public  String getSchool() {
 		return school;
 	}
 
-	public final void setSchool(String school) {
+	public  void setSchool(String school) {
 		this.school = school;
 	}
 
